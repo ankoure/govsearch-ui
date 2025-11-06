@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-background: oklch(100% 0 0);
+  --color-foreground: oklch(9.8% 0.038 285.9);
+  --color-card: oklch(100% 0 0);
+  --color-card-foreground: oklch(9.8% 0.038 285.9);
+  --color-popover: oklch(100% 0 0);
+  --color-popover-foreground: oklch(9.8% 0.038 285.9);
+  --color-primary: oklch(11.2% 0.036 285.9);
+  --color-primary-foreground: oklch(98% 0.007 247.9);
+  --color-secondary: oklch(96.1% 0.001 247.9);
+  --color-secondary-foreground: oklch(11.2% 0.036 285.9);
+  --color-muted: oklch(96.1% 0.001 247.9);
+  --color-muted-foreground: oklch(46.9% 0.02 256.7);
+  --color-accent: oklch(96.1% 0.001 247.9);
+  --color-accent-foreground: oklch(11.2% 0.036 285.9);
+  --color-destructive: oklch(60.2% 0.177 29.2);
+  --color-destructive-foreground: oklch(98% 0.007 247.9);
+  --color-border: oklch(91.4% 0.006 256.1);
+  --color-input: oklch(91.4% 0.006 256.1);
+  --color-ring: oklch(9.8% 0.038 285.9);
+
+  /* Border radius */
+  --radius: 0.5rem;
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+}
+
+
+* {
+  border-color: var(--color-border);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: system-ui, -apple-system, sans-serif;
+}
